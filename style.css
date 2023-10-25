@@ -1,0 +1,46 @@
+:root {
+  --primary: #3ee9e5;
+  --secondary: #093f68;
+  --grey: #777f98;
+  --white: #fff;
+  --bg-clr: #080c20;
+  --clr-error: #ff2965;
+
+  --font-manrope: "Manrope", sans-serif;
+
+  --base-size: 1.2rem;
+  --scale: 1.25;
+
+  --h1: calc(var(var(--h2)) * var(var(--scale)));
+  --h2: calc(var(var(--h3)) * var(var(--scale)));
+  --h3: calc(var(var(--h4)) * var(var(--scale)));
+  --h4: calc(var(var(--h5)) * var(var(--scale)));
+  --h5: calc(var(var(--base-size)) * var(var(--scale)));
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-manrope);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-clr);
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  line-height: 1;
+}
